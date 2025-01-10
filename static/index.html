@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Immersive Roulette</title>
+  <link rel="stylesheet" href="app.css"> <!-- Link to the updated CSS -->
+  <script src="https://cdn.socket.io/4.5.0/socket.io.min.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <div class="bubbles">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div> <!-- Poppins Font -->
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header class="header">
+      <h1 style="font-family:arial;">Immersive Roulette</h1>
+    </header>
+
+    <!-- Live Numbers Section -->
+    <section class="feed-section">
+      <div id="roulette-feed" class="feed">
+        <!-- Dynamically updated with the last 12 numbers -->
+      </div>
+    </section>
+
+    <!-- Predictions Section -->
+    <section class="prediction-section">
+      <div id="prediction-feed" class="feed">
+        <!-- Dynamically updated with the predicted 3 numbers -->
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <!-- Footer content, if needed -->
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

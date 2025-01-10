@@ -1,0 +1,293 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    border-radius: 10px;}
+
+  .bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0; /* Ensure it stays behind your site's content */
+}
+
+.bubbles span {
+  position: absolute;
+  bottom: -50px;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  animation: bubble 10s linear infinite;
+  pointer-events: none;
+  animation-delay: calc(-1s * var(--i));
+}
+
+.bubbles span:nth-child(1) {
+  left: 10%;
+  width: 40px;
+  height: 40px;
+  animation-duration: 8s;
+  --i: 1;
+}
+.bubbles span:nth-child(2) {
+  left: 30%;
+  width: 35px;
+  height: 35px;
+  animation-duration: 10s;
+  --i: 2;
+}
+.bubbles span:nth-child(3) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-duration: 12s;
+  --i: 3;
+}
+.bubbles span:nth-child(4) {
+  left: 70%;
+  width: 18px;
+  height: 18px;
+  animation-duration: 9s;
+  --i: 4;
+}
+.bubbles span:nth-child(5) {
+  left: 90%;
+  width: 22px;
+  height: 22px;
+  animation-duration: 11s;
+  --i: 5;
+}
+.bubbles span:nth-child(6) {
+  left: 15%;
+  width: 16px;
+  height: 16px;
+  animation-duration: 13s;
+  --i: 6;
+}
+.bubbles span:nth-child(7) {
+  left: 40%;
+  width: 19px;
+  height: 19px;
+  animation-duration: 10s;
+  --i: 7;
+}
+.bubbles span:nth-child(8) {
+  left: 60%;
+  width: 14px;
+  height: 14px;
+  animation-duration: 14s;
+  --i: 8;
+}
+.bubbles span:nth-child(9) {
+  left: 80%;
+  width: 21px;
+  height: 21px;
+  animation-duration: 10s;
+  --i: 9;
+}
+.bubbles span:nth-child(10) {
+  left: 95%;
+  width: 17px;
+  height: 17px;
+  animation-duration: 12s;
+  --i: 10;
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-50vh) scale(1.2);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-100vh) scale(0.8);
+    opacity: 0;
+  }
+}
+
+/* Body Styling */
+body {
+  background:#0e0d5f;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    padding: 2rem;
+    margin: 0;
+  
+    animation: gradient-animation 15s ease infinite!important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  transform: scale(0.7);
+}
+
+p, span {
+  font-family: Arial, sans-serif; /* Ensure Arial for all text */
+}
+
+/* Container */
+.container {
+  --background-color: linear-gradient(19deg, #4a00a1 0%, #000b1f 100%);
+     background: linear-gradient(270deg, #4a00a1, #2b00e6, #000b1f);
+     animation: gradient-animation 15s ease infinite;
+  padding: 20px;
+  max-width: 900px;
+  width: 100%;
+      border: 1px solid #3b3e73;
+      z-index:10000;}
+      @media only screen and (max-width: 600px) {
+        .feed div.red {
+  background: red; /* Red background for specific numbers */
+  color: white;
+   padding: 5px 0px!important;
+  width:30px!important; 
+  height:30px!important;
+  align-items: center; /* White font color */
+ }
+}
+@media only screen and (max-width: 600px) {
+.feed div.black {
+  background: black;
+   padding: 5px 0px!important;
+  width:30px!important; 
+  height:30px!important;
+  align-items: center;
+
+ }
+}
+@media only screen and (max-width: 600px) {
+.feed div.green {
+  color: white;
+width:30px!important; 
+  height:30px!important;
+  padding: 5px 0px!important;
+  align-items: center;
+ }
+}
+@media only screen and (max-width: 600px) {
+.feed div {
+  font-size: 14px!important;}
+ }
+}
+@media only screen and (max-width: 600px) {
+  .header h1 {
+    font-size: 0.5rem!important;
+   }
+  }
+/* Header */
+.header {
+  margin-bottom: 30px;
+}
+
+.header h1, .header p {
+  font-family: Arial, sans-serif !important;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff; /* Darker blue */
+}
+
+.header p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 1.8rem;
+  color: #0077b6;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.distance-section {display:none;}
+/* Feed Sections */
+.feed-section {
+  background: url("https://123rouletteapps.com/wp-content/uploads/2025/01/immersive_roulette_thumbnail_1000x563-1.jpg"); /* White background for contrast */
+  padding: 20px;
+  background-position:top;
+  background-size:cover;
+  border-radius: 10px;
+  margin-bottom: -150px;
+  box-shadow: none;
+  height:300px;
+   align-items: center;
+}
+
+.feed {
+  display: block;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 180px;
+  align-items: center;
+}
+.feed div.red {
+  background: red; /* Red background for specific numbers */
+  color: white;
+  width:50px; 
+  height:50px; /* White font color */
+}
+
+/* Black Numbers */
+.feed div.black {
+  background: black; 
+  color: white;
+  width:50px; 
+  height:50px;
+}
+.feed div.green {background: green; 
+  color: white;
+width:50px; 
+  height:50px;}
+
+/* Numbers Styling */
+.feed div {
+  padding: 20px 10px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: none;
+  transition: none;
+  align-items: center;
+}
+h3 {color:#fff;padding-top:20px;}
+.feed div:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .feed div {
+    font-size: 1.2rem;
+    padding: 10px 15px;
+  }
+}

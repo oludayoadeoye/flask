@@ -1,0 +1,17 @@
+from sklearn.ensemble import RandomForestClassifier
+import pickle
+import numpy as np
+
+# Generate dummy data (replace this with your actual training data)
+X = np.random.randint(0, 37, (1000, 12))  # Features: last 12 numbers
+y = np.random.randint(0, 37, 1000)       # Labels: next number
+
+# Train the model
+model = RandomForestClassifier()
+model.fit(X, y)
+
+# Save the trained model
+with open('model.pkl', 'wb') as f:
+    pickle.dump(model, f)
+
+print("Model trained and saved successfully as 'model.pkl'")

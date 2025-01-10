@@ -1,0 +1,28 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"features": {
+		"ghcr.io/nikobockerman/devcontainer-features/yarn-persistent-cache:1": {},
+		"ghcr.io/va-h/devcontainers-features/uv:1": {
+			"shellautocompletion": true,
+			"version": "latest"
+		},
+		"ghcr.io/nils-geistmann/devcontainers-features/zsh:0": {
+			"setLocale": true,
+			"theme": "robbyrussell",
+			"plugins": "git docker",
+			"desiredLocale": "en_US.UTF-8 UTF-8"
+		},
+		"ghcr.io/devcontainers-extra/features/pass-apt-get:1": {},
+		"ghcr.io/devcontainers-extra/features/pipenv:2": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-extra/features/youtubeuploader:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-extra/features/zsh-plugins:0": {
+			"plugins": "ssh-agent npm",
+			"omzPlugins": "https://github.com/zsh-users/zsh-autosuggestions",
+			"username": "root"
+		}
+	}
+}
